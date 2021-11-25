@@ -19,11 +19,11 @@ function logWithTime(msg) {
 app.use(require('./mw.js'));
 
 app.get('/', function(req, res, next) {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/index.html', function(req, res, next) {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/download_video', function(req, res) {
@@ -67,7 +67,7 @@ app.get('/dynamic_page', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-  res.sendFile(__dirname + '/public/404.html');
+  res.sendFile(__dirname + '/404.html');
 });
 
 let server = app.listen(3000, function() {
