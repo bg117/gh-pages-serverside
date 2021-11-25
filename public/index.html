@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>bg117's random projects - server-side</title>
+</head>
+
+<body>
+	<p>
+		For my home page, please go to my <a href="https://bg117.github.io">main website</a>. This website just hosts my server-side
+		components.
+	</p>
+	<p>
+    The format for a parameter is: <code>&lt;url&gt;/<strong>page</strong>?<strong>parameter=value</strong>&<strong>additional_parameters=value</strong></code>
+    <br>
+		That said, here are the parameters:
+		<br>
+    <ul style="list-style-position: inside; padding-left: 0;">
+		  Parameters for page <code>download_video</code>
+      <ul>
+        <li>
+          <code>id</code>: the ID of the video you want to download. ex: <code>dQw4w9WgXcQ</code>
+        </li>
+        Additional parameters (optional):
+        <ul>
+          <li>
+            <code>format</code>: can be mp3 or mp4
+          </li>
+        </ul>
+      </ul>
+      <br/>
+      Parameters for page <code>dynamic_page</code>
+      <ul>
+        <li>
+          <code>code</code>: the HTML markup of the page. <strong>Note: the HTML needs to be minified and URL-encoded.</strong>
+        </li>
+        <p>
+          Example:<br/>
+          <code>
+          https://backend.bg117.repl.co/dynamic_page?code=%3C%21DOCTYPE%20html%3E%3Chtml%3E%3Cbody%3EHello%20World%3C%2Fbody%3E%3C%2Fhtml%3E
+          </code>
+        </p>
+
+      </ul>
+    </ul>
+  </p>
+  </body>
+</html>
