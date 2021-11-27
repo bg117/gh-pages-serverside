@@ -6,7 +6,7 @@ It can be found at https://backend.bg117.repl.co.
 
 All of these are achieved using queries.
 
-- YouTube video downloader (query: download_video)
-- Dynamic static page creator (creates static pages dynamically) (query: dynamic_page)
+- YouTube video downloader (**command**: download_video, **query**: id, format)
+- Dynamic static page creator (creates static pages dynamically) (**command**: dynamic_page, **query**: code)
 
 More details can be found in the website.
