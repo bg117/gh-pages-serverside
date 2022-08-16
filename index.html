@@ -9,21 +9,21 @@
 
 <body>
 	<p>
-		If you're looking for my projects, please go to my <a href="https://bg117.github.io">main website</a>. This website just hosts my server-side
+		If you're looking for my projects, please go to my <a href="https://projects.bg117.xyz">projects website</a>. This website just hosts my server-side
 		components.
 	</p>
 	<p>
-    The format for a query is: <code>&lt;url&gt;/<strong>command</strong>?<strong>query=value</strong>&<strong>additional_queries=value</strong></code>
+    The format for a query is: <code>&lt;url&gt;/[<strong>subdirectory</strong>]?<strong>key=value</strong>[&<strong>additional_keys=value</strong>...]</code>
     <br>
-		That said, here are the queries:
+		That said, here are the keys:
 		<br>
     <ul style="list-style-position: inside; padding-left: 0;">
-		  Queries for command <code>download_video</code>
+		  Keys for subdirectory <code>download_video</code>
       <ul>
         <li>
           <code>id</code>: the ID of the video you want to download. ex: <code>dQw4w9WgXcQ</code>
         </li>
-        Additional queries (optional):
+        Additional keys (optional):
         <ul>
           <li>
             <code>format</code>: can be mp3 or mp4
@@ -31,15 +31,15 @@
         </ul>
       </ul>
       <br/>
-      Queries for command <code>dynamic_page</code>
+      Keys for subdirectory <code>dynamic_page</code>
       <ul>
         <li>
-          <code>code</code>: the HTML markup of the page. <strong>Note: the HTML needs to be minified and URL-encoded.</strong>
+          <code>code</code>: the HTML markup of the page. <strong>Note: the HTML needs to be minified and Base64-encoded.</strong>
         </li>
         <p>
           Example:<br/>
           <code>
-          https://backend.bg117.repl.co/dynamic_page?code=%3C%21DOCTYPE%20html%3E%3Chtml%3E%3Cbody%3EHello%20World%3C%2Fbody%3E%3C%2Fhtml%3E
+          https://backend.bg117.repl.co/dynamic_page?code=PCFET0NUWVBFIGh0bWw+PGh0bWw+PGJvZHk+SGVsbG8gV29ybGQ8L2JvZHk+PC9odG1sPg==
           </code>
         </p>
 
